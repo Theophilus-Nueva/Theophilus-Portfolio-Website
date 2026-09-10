@@ -53,11 +53,11 @@
         <div class="hero__actions">
           <a href="#projects" class="btn btn--primary">My Projects</a>
           <div class="hero__cv-wrapper">
-            <a href="#" class="btn btn--outline-dark">
+            <a href="/Theophilus-Nueva-CV.pdf" download="Theophilus-Nueva-CV.pdf" class="btn btn--outline-dark">
               <i class='bx bx-file'></i>
               <span>Download CV</span>
             </a>
-            <span class="hero__cv-size">5.5mb</span>
+            <span class="hero__cv-size">114 kb</span>
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@
         <h3 class="skills__category-title">Programming Languages</h3>
         <div class="skills__icons">
           <div class="skill-icon" title="Python">
-            <i class="devicon-python-plain colored"></i>
+            <img src="/python.svg" alt="Python" class="skill-icon__img">
           </div>
           <div class="skill-icon" title="TypeScript">
             <i class="devicon-typescript-plain colored"></i>
@@ -118,11 +118,11 @@
           <div class="skill-icon" title="JavaScript">
             <i class="devicon-javascript-plain colored"></i>
           </div>
+          <div class="skill-icon" title="Ruby">
+            <i class="devicon-ruby-plain colored"></i>
+          </div>
           <div class="skill-icon" title="Java">
             <i class="devicon-java-plain colored"></i>
-          </div>
-          <div class="skill-icon" title="PHP">
-            <i class="devicon-php-plain colored"></i>
           </div>
         </div>
       </div>
@@ -130,22 +130,24 @@
       <div class="skills__group">
         <h3 class="skills__category-title">Web Development Tools</h3>
         <div class="skills__icons">
-          <div class="skill-icon" title="React">
-            <i class="devicon-react-original colored"></i>
-          </div>
-          <div class="skill-icon" title="Bootstrap">
-            <i class="devicon-bootstrap-plain colored"></i>
-          </div>
-          <div class="skill-icon skill-icon--text" title="Next.js"><span>NEXT<span style="font-size: 0.72em; font-weight: 600;">.js</span></span></div>
-          <div class="skill-icon" title="Node.js">
-            <i class="devicon-nodejs-plain colored"></i>
-          </div>
-          <div class="skill-icon" title="Express.js">
-            <i class="devicon-express-original"></i>
-          </div>
           <div class="skill-icon skill-icon--fastapi" title="FastAPI">
             <i class="devicon-fastapi-plain colored"></i>
             <span class="skill-icon__label">FastAPI</span>
+          </div>
+          <div class="skill-icon" title="CSS3">
+            <i class="devicon-css3-plain colored"></i>
+          </div>
+          <div class="skill-icon" title="HTML5">
+            <i class="devicon-html5-plain colored"></i>
+          </div>
+          <div class="skill-icon skill-icon--text" title="Next.js">
+            <span>NEXT<span style="font-size: 0.72em; font-weight: 600;">.js</span></span>
+          </div>
+          <div class="skill-icon" title="Node.js">
+            <i class="devicon-nodejs-plain colored"></i>
+          </div>
+          <div class="skill-icon" title="React">
+            <i class="devicon-react-original colored"></i>
           </div>
         </div>
       </div>
@@ -153,14 +155,14 @@
       <div class="skills__group">
         <h3 class="skills__category-title">Database</h3>
         <div class="skills__icons">
-          <div class="skill-icon" title="PostgreSQL">
-            <i class="devicon-postgresql-plain colored"></i>
-          </div>
-          <div class="skill-icon" title="MongoDB">
-            <i class="devicon-mongodb-plain colored"></i>
+          <div class="skill-icon" title="SQLite">
+            <i class="devicon-sqlite-plain colored"></i>
           </div>
           <div class="skill-icon" title="MySQL">
             <i class="devicon-mysql-plain colored"></i>
+          </div>
+          <div class="skill-icon" title="PostgreSQL">
+            <i class="devicon-postgresql-plain colored"></i>
           </div>
         </div>
       </div>
@@ -171,11 +173,11 @@
           <div class="skill-icon" title="Firebase">
             <i class="devicon-firebase-plain colored"></i>
           </div>
-          <div class="skill-icon" title="Amazon Web Services">
-            <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+          <div class="skill-icon" title="Railway">
+            <img src="/railway.svg" alt="Railway" class="skill-icon__img">
           </div>
-          <div class="skill-icon" title="Google Cloud">
-            <i class="devicon-googlecloud-plain colored"></i>
+          <div class="skill-icon" title="Cloud Platform">
+            <img src="/pink-service.png" alt="Cloud Platform" class="skill-icon__img">
           </div>
         </div>
       </div>
@@ -195,11 +197,11 @@
         <div class="experience__content">
           <h3 class="experience__role">Full Stack Web Developer Intern</h3>
           <p class="experience__company">TechNavyPhil Software Company</p>
-          <p class="experience__meta">Jun 2025 &mdash; Present &middot; General Trias, Cavite &middot; On-site</p>
+          <p class="experience__meta">Sep 2026 &mdash; Present &middot; General Trias, Cavite &middot; On-site</p>
           <ul class="experience__bullets">
-            <li>Built and shipped internal dashboards with React.js, TypeScript and FastAPI alongside a team of four developers.</li>
-            <li>Designed PostgreSQL schemas and REST endpoints powering client reporting tools used daily by operations staff.</li>
-            <li>Reviewed pull requests and paired with junior interns to keep the codebase consistent and documented.</li>
+            <li>Build and maintain web applications with Ruby on Rails, deploying and scaling services on Railway.</li>
+            <li>Apply UI/UX design principles to design clean, accessible interfaces and implement responsive front-end components.</li>
+            <li>Work in paired development sessions with Business Analysts and Quality Assurance (QA) to turn specifications into tested, production-ready features.</li>
           </ul>
         </div>
       </div>
@@ -215,81 +217,80 @@
       <div class="projects__grid">
         <!-- Project 1 -->
         <article class="project-card" id="project-1">
-          <div class="project-card__header">
-            <span class="project-card__badge">Event Scheduling System for Student Organizations</span>
-          </div>
-          <div class="project-card__subheader">
-            <small>Information Technology and Computer Science Student Association</small>
-          </div>
           <div class="project-card__image">
-            <img src="/project-1.jpg" alt="Event Scheduling System dashboard" loading="lazy">
+            <img src="/event-scheduling.png" alt="Student Scheduling System For Student Organizations dashboard" loading="lazy">
+            <span class="project-card__status-tag">
+              <span class="status-dot status-dot--offline"></span>
+              <span>Offline</span>
+            </span>
           </div>
           <div class="project-card__content">
             <h3 class="project-card__title">Event Scheduling System</h3>
+            <p class="project-card__tagline">For the Student Organizations of LPU</p>
             <p class="project-card__description">
-              I am a passionate student and developer with
-              over 5 years of learning experience
-              specializing in React.js, Node.js, Python,
-              FastAPI, MySQL, and PostgreSQL.
+              A comprehensive event scheduling platform designed for student organizations to manage venues, coordinate timetables, and streamline event approvals.
             </p>
             <div class="project-card__tech">
               <span class="tech-dot tech-dot--react" title="React"><i class="devicon-react-original colored"></i></span>
               <span class="tech-dot tech-dot--node" title="Node.js"><i class="devicon-nodejs-plain colored"></i></span>
               <span class="tech-dot tech-dot--pg" title="PostgreSQL"><i class="devicon-postgresql-plain colored"></i></span>
-              <span class="tech-dot tech-dot--python" title="Python"><i class="devicon-python-plain colored"></i></span>
             </div>
           </div>
         </article>
 
         <!-- Project 2 -->
-        <article class="project-card" id="project-2">
-          <div class="project-card__header project-card__header--teal">
-            <span class="project-card__badge">Neurohook</span>
-          </div>
-          <div class="project-card__image project-card__image--neurohook">
-            <img src="/project-2.jpg" alt="Neurohook landing page" loading="lazy">
+        <article class="project-card project-card--interactive" id="project-2" 
+          data-href="https://www.figma.com/proto/qXcUXRvIc54jqIurwo9Lsm/Food-App?node-id=1-4&p=f&t=dXJUJjkZoOh6rKnp-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A3&starting-point-node-id=1%3A4" 
+          title="Click to view Figma Prototype">
+          <div class="project-card__image project-card__image--mobile">
+            <img src="/food-delivery.png" alt="Campus Food Delivery mobile application interface" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="project-card__overlay-badge">
+                <i class='bx bx-link-external'></i>
+                <span>View Prototype</span>
+              </span>
+            </div>
           </div>
           <div class="project-card__content">
-            <h3 class="project-card__title">Event Scheduling System</h3>
+            <div class="project-card__title-row">
+              <h3 class="project-card__title">Campus Food Delivery App</h3>
+              <i class='bx bx-link-external project-card__ext-icon' aria-hidden="true"></i>
+            </div>
+            <p class="project-card__tagline">LPU-Cavite Campus Ordering</p>
             <p class="project-card__description">
-              I am a passionate student and developer with
-              over 5 years of learning experience
-              specializing in React.js, Node.js, Python,
-              FastAPI, MySQL, and PostgreSQL.
+              A mobile food ordering and delivery application designed for the campus community, featuring nearby restaurant discovery, category filtering, discount promotions, and order tracking.
             </p>
             <div class="project-card__tech">
-              <span class="tech-dot" title="React"><i class="devicon-react-original colored"></i></span>
-              <span class="tech-dot" title="Node.js"><i class="devicon-nodejs-plain colored"></i></span>
-              <span class="tech-dot" title="PostgreSQL"><i class="devicon-postgresql-plain colored"></i></span>
-              <span class="tech-dot" title="Python"><i class="devicon-python-plain colored"></i></span>
+              <span class="tech-dot" title="Figma"><img src="/figma.svg" alt="Figma" style="width: 1.15rem; height: 1.15rem; display: block; object-fit: contain;"></span>
             </div>
           </div>
         </article>
 
         <!-- Project 3 -->
-        <article class="project-card" id="project-3">
-          <div class="project-card__header">
-            <span class="project-card__badge">Event Scheduling System for Student Organizations</span>
-          </div>
-          <div class="project-card__subheader">
-            <small>Information Technology and Computer Science Student Association</small>
-          </div>
+        <article class="project-card project-card--interactive" id="project-3" 
+          data-href="https://neuronook.appwrite.network/" 
+          title="Click to visit NeuroNook (opens live app)">
           <div class="project-card__image">
-            <img src="/project-3.jpg" alt="Event Scheduling System interface" loading="lazy">
+            <img src="/neuronook.png" alt="NeuroNook mental health and wellness platform" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="project-card__overlay-badge">
+                <i class='bx bx-link-external'></i>
+                <span>Visit Live App</span>
+              </span>
+            </div>
           </div>
           <div class="project-card__content">
-            <h3 class="project-card__title">Event Scheduling System</h3>
+            <div class="project-card__title-row">
+              <h3 class="project-card__title">NeuroNook</h3>
+              <i class='bx bx-link-external project-card__ext-icon' aria-hidden="true"></i>
+            </div>
+            <p class="project-card__tagline">Mental Wellness Platform</p>
             <p class="project-card__description">
-              I am a passionate student and developer with
-              over 5 years of learning experience
-              specializing in React.js, Node.js, Python,
-              FastAPI, MySQL, and PostgreSQL.
+              A comprehensive mental wellness platform providing mood tracking, guided meditations, and journaling resources to support student and user mental health.
             </p>
             <div class="project-card__tech">
               <span class="tech-dot" title="React"><i class="devicon-react-original colored"></i></span>
-              <span class="tech-dot" title="Node.js"><i class="devicon-nodejs-plain colored"></i></span>
-              <span class="tech-dot" title="PostgreSQL"><i class="devicon-postgresql-plain colored"></i></span>
-              <span class="tech-dot" title="Python"><i class="devicon-python-plain colored"></i></span>
+              <span class="tech-dot" title="Appwrite"><i class="devicon-appwrite-original colored"></i></span>
             </div>
           </div>
         </article>
@@ -314,12 +315,7 @@
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer id="footer" class="footer">
-    <div class="container">
-      <p>&copy; 2024 Theophilus Nueva. All rights reserved.</p>
-    </div>
-  </footer>
+
 
   <script type="module" src="/src/main.js"></script>
 </body>

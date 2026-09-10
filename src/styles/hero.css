@@ -39,7 +39,7 @@
 }
 
 .hero__highlight {
-  color: var(--primary);
+  color: #164994;
   font-weight: 800;
 }
 
@@ -122,15 +122,15 @@
 }
 
 .hero__actions .btn--primary {
-  background: var(--primary);
+  background: #4983DB;
   color: #ffffff;
-  border: 2px solid var(--primary);
+  border: 2px solid #4983DB;
   font-weight: 600;
 }
 
 .hero__actions .btn--primary:hover {
-  background: var(--primary-hover);
-  border-color: var(--primary-hover);
+  background: #3b74cb;
+  border-color: #3b74cb;
   transform: translateY(-1px);
 }
 
@@ -374,5 +374,5 @@
   left: 0;
   width: 100%;
   height: 32px;
-  background: var(--primary);
+  background: #164994;
 }

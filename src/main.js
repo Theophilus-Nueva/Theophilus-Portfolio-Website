@@ -22,28 +22,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// ── Scroll-reveal animation ──
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-);
-
-document
-  .querySelectorAll(
-    '.section__title, .section__subtitle, .project-card, .cert-card, .skill-icon, .experience__card, .skills__group'
-  )
-  .forEach((el) => {
-    el.classList.add('reveal');
-    revealObserver.observe(el);
-  });
-
 // ── Interactive copy feature for contact items ──
 const contactButtons = document.querySelectorAll('.hero__contact-item');
 
@@ -86,4 +64,26 @@ contactButtons.forEach((btn) => {
   };
 
   btn.addEventListener('click', handleCopy);
+});
+
+// ── Interactive project cards direct link ──
+const interactiveCards = document.querySelectorAll('.project-card--interactive');
+
+interactiveCards.forEach((card) => {
+  const handleRedirect = () => {
+    const targetUrl = card.getAttribute('data-href');
+    if (targetUrl) {
+      window.open(targetUrl, '_blank', 'noopener,noreferrer');
+    }
+  };
+
+  card.addEventListener('click', handleRedirect);
+  card.setAttribute('tabindex', '0');
+  card.setAttribute('role', 'link');
+  card.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleRedirect();
+    }
+  });
 });
