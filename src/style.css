@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import './styles/base.css';
+@import './styles/hero.css';
+@import './styles/skills.css';
+@import './styles/experience.css';
+@import './styles/projects.css';
+@import './styles/certifications.css';
+@import './styles/footer.css';
+@import './styles/animations.css';
+@import './styles/responsive.css';
+
+:root {
+  --hero-bg: #3a3a3a;
+  --hero-photo-bg: #c8c8c8;
+  --primary: #164994;
+  --primary-hover: #1d4ed8;
+  --accent-red: #dc2626;
+  --text-white: #ffffff;
+  --text-dark: #1a1a1a;
+  --text-muted: #666666;
+  --text-light: #aaaaaa;
+  --bg-white: #ffffff;
+  --bg-light: #f4f4f4;
+  --bg-dark: #333333;
+  --border: #e0e0e0;
+  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+  /* typography */
+  --font: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: background 0.25s, border-color 0.25s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: var(--primary);
+  color: var(--text-white);
+  border: 2px solid var(--primary);
+}
+
+.btn--primary:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--text-white);
+  border: 2px solid var(--text-white);
+}
+
+.btn--outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.btn--outline-dark {
+  background: transparent;
+  color: var(--text-dark);
+  border: 2px solid var(--text-dark);
+}
+
+.btn--outline-dark:hover {
+  color: var(--text-white);
+  transform: translateY(-1px);
+}

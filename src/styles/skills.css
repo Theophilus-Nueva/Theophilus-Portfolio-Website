@@ -1,0 +1,84 @@
+/* ============================================
+   TECHNICAL SKILLS
+   ============================================ */
+.skills {
+  padding: 56px 0 48px;
+}
+
+.skills__group {
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.skills__category-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: var(--text-dark);
+  letter-spacing: -0.2px;
+}
+
+.skills__icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-icon {
+  width: 84px;
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  font-size: 2.6rem;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+              border-color 0.25s ease;
+  cursor: default;
+  position: relative;
+}
+
+.skill-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.12), 0 4px 8px -2px rgba(0, 0, 0, 0.04);
+  border-color: #cbd5e1;
+}
+
+.skill-icon i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.skill-icon--text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.5px;
+}
+
+.skill-icon--fastapi {
+  gap: 3px;
+}
+
+.skill-icon--fastapi i {
+  font-size: 2rem;
+}
+
+.skill-icon__label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: #059669;
+  letter-spacing: -0.2px;
+  line-height: 1;
+}

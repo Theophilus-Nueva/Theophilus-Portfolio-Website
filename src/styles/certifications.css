@@ -1,0 +1,32 @@
+/* ============================================
+   CERTIFICATIONS
+   ============================================ */
+.certifications {
+  padding: 56px 0 64px;
+  border-top: 1px solid var(--border);
+}
+
+.certifications__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 780px;
+}
+
+.cert-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.25s, box-shadow 0.25s;
+  background: var(--bg-white);
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.cert-card img {
+  width: 100%;
+  height: auto;
+}

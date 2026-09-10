@@ -1,0 +1,378 @@
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+  display: flex;
+  min-height: 520px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ── Left content side ── */
+.hero__content {
+  flex: 1 1 55%;
+  background-color: #ffffff;
+  background-image: url('/tile-pattern.svg');
+  background-repeat: repeat;
+  background-size: 16px 16px;
+  padding: 56px 48px 56px var(--site-left-padding, 72px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text-dark);
+}
+
+.hero__name {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 2px;
+  letter-spacing: -0.5px;
+  color: var(--text-dark);
+}
+
+.hero__subtitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: var(--text-dark);
+}
+
+.hero__highlight {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.hero__description {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 20px;
+  max-width: 370px;
+}
+
+/* ── CTA & Socials Flex Group ── */
+.hero__cta-group {
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+
+/* ── Socials ── */
+.hero__socials-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__socials-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 5px;
+  letter-spacing: 0.2px;
+}
+
+.hero__socials {
+  display: flex;
+  gap: 8px;
+}
+
+.hero__social-btn {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  color: #1a1a1a;
+  font-size: 1.3rem;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.hero__social-btn:hover {
+  background: #f1f5f9;
+  border-color: #000000;
+  transform: translateY(-1px);
+}
+
+/* ── CTA buttons ── */
+.hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.hero__actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+  white-space: nowrap;
+  line-height: 1.25;
+}
+
+.hero__actions .btn--primary {
+  background: var(--primary);
+  color: #ffffff;
+  border: 2px solid var(--primary);
+  font-weight: 600;
+}
+
+.hero__actions .btn--primary:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* ── CV button wrapper & size text ── */
+.hero__cv-wrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__cv-size {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-3px);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #555555;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.2px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 2;
+}
+
+.hero__cv-wrapper:hover .hero__cv-size {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.hero__actions .btn--outline-dark {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  color: #1f2937;
+  border: 2px solid #334155;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.25s ease, border-color 0.25s ease, transform 0.15s ease;
+}
+
+/* Loading animation: slowly fills with gray from left to right on hover */
+.hero__actions .btn--outline-dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #303030;
+  transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 0;
+}
+
+.hero__actions .btn--outline-dark:hover::before {
+  width: 100%;
+}
+
+.hero__actions .btn--outline-dark:hover {
+  border-color: #1f2937;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.hero__actions .btn--outline-dark > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__actions .btn--outline-dark i {
+  font-size: 1rem;
+}
+
+/* ── Contact info & minimalist copy feature ── */
+.hero__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.hero__contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+  font-family: inherit;
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  padding: 2px 0;
+  margin: 0;
+  cursor: pointer;
+  width: fit-content;
+  max-width: 100%;
+  text-align: left;
+  transition: color 0.2s ease;
+  position: relative;
+  user-select: none;
+}
+
+.hero__contact-item:hover,
+.hero__contact-item:hover .hero__contact-text,
+.hero__contact-item:hover strong {
+  color: var(--primary);
+}
+
+.hero__contact-item:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.hero__contact-item:focus-visible,
+.hero__contact-item:focus-visible .hero__contact-text,
+.hero__contact-item:focus-visible strong {
+  color: var(--primary);
+}
+
+.hero__contact-icon {
+  font-size: 0.95rem;
+  width: 16px;
+  text-align: center;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.hero__contact-item:hover .hero__contact-icon,
+.hero__contact-item:focus-visible .hero__contact-icon {
+  color: var(--primary);
+}
+
+.hero__contact-text {
+  transition: color 0.2s ease;
+  line-height: 1.4;
+}
+
+.hero__contact-item strong {
+  font-weight: 700;
+  color: var(--text-dark);
+  transition: color 0.2s ease;
+}
+
+/* ── Minimalist Copy Indicator (Blue) ── */
+.hero__contact-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 8px;
+  padding: 1px 7px;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--primary);
+  background: rgba(22, 73, 148, 0.08);
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.2s ease, color 0.2s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.hero__contact-badge i {
+  font-size: 0.72rem;
+}
+
+.hero__contact-item:hover .hero__contact-badge,
+.hero__contact-item:focus-visible .hero__contact-badge {
+  opacity: 0.9;
+}
+
+/* ── Copied State (Minimalist Blue Theme) ── */
+.hero__contact-item.copied,
+.hero__contact-item.copied .hero__contact-text,
+.hero__contact-item.copied strong {
+  color: var(--primary);
+}
+
+.hero__contact-item.copied .hero__contact-icon {
+  color: var(--primary);
+}
+
+.hero__contact-item.copied .hero__contact-badge {
+  opacity: 1;
+  background: var(--primary);
+  color: #ffffff;
+}
+
+/* ── Photo side (slideshow) ── */
+.hero__image {
+  flex: 0 0 45%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__photo-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  background-image: url('/Photo-Background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__slide {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 88%;
+  height: 88%;
+  object-fit: contain;
+  object-position: bottom center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
+}
+
+.hero__slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Blue accent line at bottom ── */
+.hero__accent-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  background: var(--primary);
+}
